@@ -1,0 +1,9 @@
+services:
+  quartz:
+    build: .
+    container_name: quartz-notes
+    restart: unless-stopped
+    ports:
+      - "8090:8080"
+    volumes:
+      - /mnt/fast-pool/apps/quartz-notes/content:/usr/src/app/content

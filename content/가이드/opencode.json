@@ -1,0 +1,177 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "jiminbox": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Jiminbox",
+      "options": {
+        "baseURL": "https://api.jiminbox.com/v1",
+        "apiKey": "여기에 발급받은 API Key를 입력하세요"
+      },
+      "models": {
+          "glm-5": {
+            "name": "GLM-5",
+            "modalities": {
+                "input": ["text"],
+                "output": ["text"]
+            },
+            "options": {
+                "thinking": {
+                    "type": "enabled",
+                    "budgetTokens": 8192
+                }
+            },
+            "limit": {
+                "context": 202752,
+                "output": 16384
+            }
+        },
+          "glm-5.1": {
+            "name": "GLM-5.1",
+            "modalities": {
+                "input": ["text"],
+                "output": ["text"]
+            },
+            "options": {
+                "thinking": {
+                    "type": "enabled",
+                    "budgetTokens": 8192
+                }
+            },
+            "limit": {
+                "context": 202752,
+                "output": 16384
+            }
+        },
+        "glm-5-turbo": {
+          "name": "GLM-5-Turbo",
+          "modalities": {
+              "input": ["text"],
+              "output": ["text"]
+          },
+          "options": {
+              "thinking": {
+                  "type": "enabled",
+                  "budgetTokens": 8192
+              }
+          },
+          "limit": {
+              "context": 202752,
+              "output": 16384
+          }
+        },
+        "glm-4.7": {
+          "name": "GLM-4.7",
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 200000,
+            "output": 131000
+          }
+        },
+        "qwen3.5-plus": {
+          "name": "Qwen3.5 Plus",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "options": {
+            "thinking": {
+              "type": "enabled",
+              "budgetTokens": 8192
+            }
+          },
+          "limit": {
+            "context": 1000000,
+            "output": 65536
+          }
+        },
+        "MiniMax-M2.5": {
+          "name": "MiniMax M2.5",
+          "modalities": {
+            "input": ["text"],
+            "output": ["text"]
+          },
+          "options": {
+            "thinking": {
+              "type": "enabled",
+              "budgetTokens": 8192
+            }
+          },
+          "limit": {
+            "context": 196608,
+            "output": 24576
+          }
+        },
+        "kimi-k2.5": {
+          "name": "Kimi K2.5",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "options": {
+            "thinking": {
+              "type": "enabled",
+              "budgetTokens": 8192
+            }
+          },
+          "limit": {
+            "context": 262144,
+            "output": 32768
+          }
+        }
+      }
+    },
+    "jiminbox-google": {
+      "npm": "@ai-sdk/google",
+      "name": "Jiminbox (Google)",
+      "options": {
+        "baseURL": "https://api.jiminbox.com/v1beta",
+        "apiKey": "여기에 발급받은 API Key를 입력하세요"
+      },
+      "models": {
+        "gemini-3-flash-preview": {
+          "name": "Gemini 3 Flash Preview",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 1000000,
+            "output": 65536
+          }
+        },
+        "gemini-3.1-pro-preview": {
+          "name": "Gemini 3.1 Pro Preview",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "limit": {
+            "context": 1000000,
+            "output": 65536
+          }
+        }
+      }
+    }
+  },
+  "plugin": [
+    "oh-my-opencode@latest"
+  ]
+}

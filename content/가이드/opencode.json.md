@@ -1,3 +1,11 @@
+---
+title: opencode.json
+---
+
+아래 설정 파일을 복사하여 `C:\Users\<사용자명>\.config\opencode\opencode.json` 경로에 저장하세요.
+`apiKey` 항목에 발급받은 API Key를 입력하면 됩니다.
+
+```json
 {
   "$schema": "https://opencode.ai/config.json",
   "provider": {
@@ -175,3 +183,4 @@
     "oh-my-opencode@latest"
   ]
 }
+```

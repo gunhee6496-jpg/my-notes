@@ -178,9 +178,6 @@ title: opencode.json
         }
       }
     }
-  },
-  "plugin": [
-    "oh-my-opencode@latest"
-  ]
+  }
 }
 ```
